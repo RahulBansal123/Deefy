@@ -16,7 +16,8 @@ Deefy is a one stop multi-chain analytics dashboard that allows anyone to visual
 * Integration of  Uniswap 
 
 
-#### Website: [Deefy]()
+#### Website (Hosted on Fleek): [Deefy](https://noisy-recipe-4666.on.fleek.co/)
+### IPFS Hash: QmY2x8oWUDwreRVnJ6soLniErVhttmgRn7eBYCXUNaCPYg
 
 #### Running the app
 
@@ -34,14 +35,6 @@ Now, open a terminal in the root directory of the project and run:
 npm install
 ```
 
-
-Create a .env file in the root folder and populate it with the following variables:
-
-```
-REACT_APP_COVALENT_API_KEY=[Covalent API Key]
-REACT_APP_WHALE_API_KEY=[Clankapp API Key]
-
-```
 Now, run the development server:
 
 ```bash
