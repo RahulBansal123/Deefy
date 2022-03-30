@@ -14,6 +14,7 @@ Deefy is a one stop multi-chain analytics dashboard that allows anyone to visual
 * NFT Market Analytics
 * Whale Transactions
 * Integration of  Uniswap 
+* Get current crypto related news
 
 
 #### Website (Hosted on Fleek): [Deefy](https://noisy-recipe-4666.on.fleek.co/)
