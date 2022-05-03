@@ -1,5 +1,3 @@
-## Hackathon: Gitcoin Grants Round 13 Hackathon
-
 ## Deefy
 
 ### Adding Login with Unstoppable domain
@@ -24,6 +22,7 @@ Deefy is a one stop multi-chain analytics dashboard that allows anyone to visual
 - Whale Transactions
 - Integration of Uniswap
 - Get current crypto related news
+- Login with Unstoppable domain
 
 #### Website (Hosted on Fleek): [Deefy](https://noisy-recipe-4666.on.fleek.co/)
 
