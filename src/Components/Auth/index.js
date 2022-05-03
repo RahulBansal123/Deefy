@@ -2,15 +2,36 @@ import React, { useState } from 'react';
 import Modal from '../../Utils/Modal';
 import { isMobile } from 'react-device-detect';
 import styled from 'styled-components';
+import UAuth from '@uauth/js';
 
 import Logo from '../../assets/logo.png';
 import WalletModal from './WalletModal';
+import { useDispatch } from 'react-redux';
+import { setMonitorWallet } from '../../Store/actionCreatos/wallets';
 
-const Auth = (props) => {
+const uauth = new UAuth({
+  clientID: '5707e27e-11dc-4981-9782-fefc554cbc06',
+  redirectUri: 'http://localhost:3000',
+});
+
+const Auth = () => {
   const [isOpen, toggle] = useState(false);
+  const dispatch = useDispatch();
 
   const handleClick = () => {
     toggle(true);
+  };
+
+  const loginWithUnstoappable = async () => {
+    try {
+      const authorization = await uauth.loginWithPopup();
+
+      if (authorization.idToken.wallet_address) {
+        dispatch(setMonitorWallet(authorization.idToken.wallet_address));
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const ModalContent = styled.div`
@@ -51,6 +72,23 @@ const Auth = (props) => {
                     onClick={handleClick}
                   >
                     Connect to a wallet
+                  </button>
+                  <button
+                    className="btn m-b-xs bg-white"
+                    onClick={loginWithUnstoappable}
+                    style={{
+                      color: 'rgb(76, 71, 247)',
+                      border: '2px solid rgb(76, 71, 247)',
+                    }}
+                  >
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxBfh5e_1zE4f3WZAmDoMD5RwzjLlktMd8A&usqp=CAU"
+                      alt="Unstoppable"
+                      width={20}
+                      height={20}
+                      className="mx-2"
+                    />
+                    Login with Unstoppable
                   </button>
                 </div>
               </div>

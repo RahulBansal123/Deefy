@@ -25,6 +25,7 @@ const TopHeader = ({
   gasPrice,
   fetchGasPrice,
   setMonitoredWallet,
+  monitored_wallet,
 }) => {
   const { currentTheme, status } = useThemeSwitcher();
   const [isDarkMode] = useState(currentTheme === 'dark');
@@ -201,7 +202,12 @@ const TopHeader = ({
                     textAlign: 'center',
                   }}
                 >
-                  {`${account?.slice(0, 8)}...${account?.slice(-3)}`}
+                  {account
+                    ? `${account?.slice(0, 8)}...${account?.slice(-3)}`
+                    : `${monitored_wallet?.slice(
+                        0,
+                        8
+                      )}...${monitored_wallet?.slice(-3)}`}
                 </span>
               </div>
             </li>
@@ -236,6 +242,7 @@ const mapStateToProps = (state) => ({
   isSidebarVisible: state.settings.isSidebarVisible,
   chainId: state.auth.chainId,
   gasPrice: state.utils.gasPrice,
+  monitored_wallet: state.wallet.monitored_wallet,
 });
 
 const mapDispatchToProps = (dispatch) => ({
