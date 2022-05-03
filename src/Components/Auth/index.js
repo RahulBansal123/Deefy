@@ -11,7 +11,10 @@ import { setMonitorWallet } from '../../Store/actionCreatos/wallets';
 
 const uauth = new UAuth({
   clientID: '5707e27e-11dc-4981-9782-fefc554cbc06',
-  redirectUri: 'http://localhost:3000',
+  redirectUri:
+    process.env.NODE_ENV === 'production'
+      ? 'https://noisy-recipe-4666.on.fleek.co/'
+      : 'http://localhost:3000',
 });
 
 const Auth = () => {
