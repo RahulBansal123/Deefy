@@ -7,6 +7,7 @@ import { setWalletBalance } from '../../../Store/actionCreatos/wallets';
 import { toggleLoading } from '../../../Store/actionCreatos/auth';
 import Loading from '../../Loading';
 import Item from './Item';
+import { useThemeSwitcher } from 'react-css-theme-switcher';
 
 const COVALENT_URL = 'https://api.covalenthq.com/v1';
 
@@ -19,6 +20,7 @@ const Holdings = ({
   chainId,
 }) => {
   const dispatch = useDispatch();
+  const { currentTheme } = useThemeSwitcher();
 
   const [ethData, setETHData] = useState([]);
   const [bscData, setBSCData] = useState([]);
@@ -217,7 +219,13 @@ const Holdings = ({
                       className="holdings-tab"
                       style={{
                         backgroundColor:
-                          showValue === name ? '#f3f6f9' : '#fff',
+                          showValue === name
+                            ? currentTheme === 'dark'
+                              ? '#2b3b52'
+                              : '#f3f6f9'
+                            : currentTheme === 'dark'
+                            ? '#253347'
+                            : '#fff',
                       }}
                     >
                       {name}
