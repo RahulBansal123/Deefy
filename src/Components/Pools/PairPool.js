@@ -41,32 +41,15 @@ const PairPool = ({ title, refetchInterval, chainId, pool, toggleLoading }) => {
     }
   }, [apiData, toggleLoading]);
 
-  function abbreviateNumber(value) {
-    var newValue = value;
-    if (value >= 1000) {
-      var suffixes = ['', 'K', 'M', 'B', 'T'];
-      var suffixNum = Math.floor(('' + value).length / 3);
-      var shortValue = '';
-      for (var precision = 2; precision >= 1; precision--) {
-        shortValue = parseFloat(
-          (suffixNum !== 0
-            ? value / Math.pow(1000, suffixNum)
-            : value
-          ).toPrecision(precision)
-        );
-        var dotLessShortValue = (shortValue + '').replace(
-          /[^a-zA-Z 0-9]+/g,
-          ''
-        );
-        if (dotLessShortValue.length <= 2) {
-          break;
-        }
-      }
-      if (shortValue % 1 !== 0) shortValue = shortValue.toFixed(1);
-      newValue = shortValue + suffixes[suffixNum];
-    }
-    return newValue;
-  }
+  const abbreviateNumber = (n) => {
+    if (n < 1e3) return n;
+    if (n >= 1e3 && n < 1e6) return +(n / 1e3).toFixed(1) + 'K';
+    if (n >= 1e6 && n < 1e9) return +(n / 1e6).toFixed(1) + 'M';
+    if (n >= 1e9 && n < 1e12) return +(n / 1e9).toFixed(1) + 'B';
+    if (n >= 1e12) return +(n / 1e12).toFixed(1) + 'T';
+  };
+
+  console.log(data);
 
   return (
     <div className="col-md-12 col-lg-12">
@@ -105,7 +88,7 @@ const PairPool = ({ title, refetchInterval, chainId, pool, toggleLoading }) => {
                     <td>${abbreviateNumber(item.volume_24h_quote)}</td>
                     <td>${abbreviateNumber(item.volume_7d_quote)}</td>
                     <td>{abbreviateNumber(item.swap_count_24h)}</td>
-                    <td>{abbreviateNumber(item.fee_24h_quote)}</td>
+                    <td>${abbreviateNumber(item.fee_24h_quote)}</td>
                   </tr>
                 ))}
               </tbody>

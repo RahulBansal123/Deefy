@@ -77,7 +77,7 @@ const NewsIcon = ({ image }) => {
       onError={onError}
       width="45px"
       height="45px"
-      style={{ objectFit: 'fill' }}
+      style={{ objectFit: 'contain' }}
     />
   );
 };

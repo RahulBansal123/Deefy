@@ -13,7 +13,7 @@ const uauth = new UAuth({
   clientID: '5707e27e-11dc-4981-9782-fefc554cbc06',
   redirectUri:
     process.env.NODE_ENV === 'production'
-      ? 'https://noisy-recipe-4666.on.fleek.co/'
+      ? 'https://deefy.on.fleek.co/'
       : 'http://localhost:3000',
 });
 
@@ -71,27 +71,21 @@ const Auth = () => {
                 </div>
                 <div className="d-grid">
                   <button
-                    className="btn btn-danger m-b-xs"
+                    className="btn btn-blue m-b-xs bg-white"
+                    onClick={loginWithUnstoappable}
+                    // style={{
+                    //   color: 'rgb(76, 71, 247)',
+                    //   border: '2px solid rgb(76, 71, 247)',
+                    // }}
+                  >
+                    Login with Unstoppable
+                  </button>
+                  <button
+                    className="btn btn-blue m-b-xs"
+                    style={{ color: '#fff' }}
                     onClick={handleClick}
                   >
                     Connect to a wallet
-                  </button>
-                  <button
-                    className="btn m-b-xs bg-white"
-                    onClick={loginWithUnstoappable}
-                    style={{
-                      color: 'rgb(76, 71, 247)',
-                      border: '2px solid rgb(76, 71, 247)',
-                    }}
-                  >
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxBfh5e_1zE4f3WZAmDoMD5RwzjLlktMd8A&usqp=CAU"
-                      alt="Unstoppable"
-                      width={20}
-                      height={20}
-                      className="mx-2"
-                    />
-                    Login with Unstoppable
                   </button>
                 </div>
               </div>

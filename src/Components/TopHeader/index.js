@@ -7,6 +7,7 @@ import Select from 'react-select';
 import { toggleSidebar } from '../../Store/actionCreatos/settings';
 import { toggleNetwork, togglePool } from '../../Store/actionCreatos/auth';
 import Logo from '../../assets/logo.png';
+import LogoDark from '../../assets/logo-dark.png';
 import { useThemeSwitcher } from 'react-css-theme-switcher';
 import Loading from '../Loading';
 import Gas from '../../assets/gas.svg';
@@ -28,9 +29,13 @@ const TopHeader = ({
   monitored_wallet,
 }) => {
   const { currentTheme, status } = useThemeSwitcher();
-  const [isDarkMode] = useState(currentTheme === 'dark');
+  const [isDarkMode, setDarkMode] = useState(currentTheme === 'dark');
   const { account } = useWeb3React();
   const history = useHistory();
+
+  useEffect(() => {
+    setDarkMode(currentTheme === 'dark');
+  }, [currentTheme]);
 
   useEffect(() => {
     fetchGasPrice(chainId);
@@ -148,7 +153,12 @@ const TopHeader = ({
               <ArrowLeft />
             </li>
             <div className="logo align-items-center">
-              <img src={Logo} alt="MetaMask" height="auto" width="40px" />
+              <img
+                src={isDarkMode ? LogoDark : Logo}
+                alt="Deefy"
+                height="auto"
+                width="100px"
+              />
             </div>
           </ul>
         </div>

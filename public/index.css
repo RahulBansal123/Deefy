@@ -409,6 +409,7 @@ h6 {
   border-radius: 10px;
   font-weight: 500;
 }
+
 .btn-danger,
 .btn-danger.disabled,
 .btn-danger:disabled {
@@ -425,6 +426,24 @@ h6 {
   border-color: #fad7dd;
   color: #ee6e83;
   box-shadow: 0 7px 23px -8px #fad7dd;
+}
+
+.btn-blue,
+.btn-blue.disabled,
+.btn-blue:disabled {
+  background-color: #175693;
+  border-color: #175693;
+  color: #175693;
+}
+.btn-blue.focus,
+.btn-blue:focus,
+.btn-blue:hover,
+.btn-blue:not(:disabled):not(.disabled).active,
+.btn-blue:not(:disabled):not(.disabled):active {
+  background-color: #175693;
+  border-color: #175693;
+  color: #175693;
+  box-shadow: 0 7px 23px -8px #afc6db;
 }
 .progress {
   background-color: #f5f6fa;

@@ -24,7 +24,7 @@ Deefy is a one stop multi-chain analytics dashboard that allows anyone to visual
 - Get current crypto related news
 - Login with Unstoppable domain
 
-#### Website (Hosted on Fleek): [Deefy](https://noisy-recipe-4666.on.fleek.co/)
+#### Website (Hosted on Fleek): [Deefy](https://deefy.on.fleek.co/)
 
 ### IPFS Hash: QmY2x8oWUDwreRVnJ6soLniErVhttmgRn7eBYCXUNaCPYg
 

@@ -279,7 +279,7 @@ const Holdings = ({
                         ))}
                       </>
                     ) : (
-                      <p>You don't have any holdings on Ethereum Chain.</p>
+                      <p>You don't have any holdings</p>
                     )}
                   </TransitionGroup>
                 );
