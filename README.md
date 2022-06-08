@@ -25,9 +25,7 @@ Deefy is a one stop multi-chain DeFi dashboard that allows anyone to visualise, 
 - Get current crypto related news
 - Login with Unstoppable domain
 
-#### Website (Hosted on Fleek): [Deefy](https://deefy.on.fleek.co/)
-
-### IPFS Hash: QmWi3WwdmJDRsrtoDUa4AwTyUz1KVvkJMBinMGwaCE2TYd
+#### Website: [Deefy](https://deefy-rahulbansal123.vercel.app/)
 
 #### Running the app
 
