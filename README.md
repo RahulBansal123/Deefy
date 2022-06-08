@@ -5,10 +5,11 @@
 Video link: [https://youtu.be/0DzkPw7P_0k](https://youtu.be/0DzkPw7P_0k)<br />
 Discord Handle: RahulBan#4539<br />
 Email: rbbansal558@gmail.com
+Unstoppable Domain: uns-devtest-rahul.crypto
 
 ### Description
 
-Deefy is a one stop multi-chain analytics dashboard that allows anyone to visualise, track and analyse data.
+Deefy is a one stop multi-chain DeFi dashboard that allows anyone to visualise, track and analyse data.
 
 ### Concept
 
@@ -26,7 +27,7 @@ Deefy is a one stop multi-chain analytics dashboard that allows anyone to visual
 
 #### Website (Hosted on Fleek): [Deefy](https://deefy.on.fleek.co/)
 
-### IPFS Hash: QmY2x8oWUDwreRVnJ6soLniErVhttmgRn7eBYCXUNaCPYg
+### IPFS Hash: QmZG8AeZ5NLtJ2dS3cfoBSu7Pr8b6muid678ytxtyv1pw2
 
 #### Running the app
 

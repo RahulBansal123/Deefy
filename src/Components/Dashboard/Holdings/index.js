@@ -172,7 +172,10 @@ const Holdings = ({
   );
   const shouldMaticDisplay = useMemo(
     () =>
-      showValue === 'MATIC' && !isMATICLoading && !maticError && !isDataLoading,
+      showValue === 'POLYGON' &&
+      !isMATICLoading &&
+      !maticError &&
+      !isDataLoading,
     [showValue, isMATICLoading, maticError, isDataLoading]
   );
 
@@ -184,7 +187,7 @@ const Holdings = ({
     shouldMaticDisplay,
   ];
 
-  const names = ['ETH', 'BSC', 'FTM', 'MATIC'];
+  const names = ['ETH', 'BSC', 'FTM', 'POLYGON'];
   return (
     <div className="col-sm-6 col-xl-4 ">
       <div className="card stat-widget ">

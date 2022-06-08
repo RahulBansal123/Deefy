@@ -104,8 +104,9 @@ const Transition = ({ data, chainId }) => {
           </CSSTransition>
         ))
       ) : (
-        <p>You don't have any transactions</p>
+        <p></p>
       )}
+      {/* <p>You don't have any transactions</p> */}
     </TransitionGroup>
   );
 };

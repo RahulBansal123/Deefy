@@ -1,5 +1,7 @@
 {
-  "name": "defi-dashboard",
+  "name": "deefy",
+  "author": "RahulBansal123",
+  "description": "A one stop multi-chain DeFi platform",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

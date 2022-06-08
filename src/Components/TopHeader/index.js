@@ -71,7 +71,7 @@ const TopHeader = ({
     { value: 1, label: 'Ethereum Mainnet' },
     { value: 56, label: 'Binance Smart Chain' },
     { value: 250, label: 'Fantom' },
-    { value: 137, label: 'Matic' },
+    { value: 137, label: 'Polygon' },
   ];
   const poolOptionsETH = [
     { value: 'uniswap_v2', label: 'Uniswap' },

@@ -525,6 +525,7 @@ tr.group {
 .login-page .container .row .login-box-container {
   top: 50%;
   transform: translateY(-50%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .authent-text {
   text-align: center;
