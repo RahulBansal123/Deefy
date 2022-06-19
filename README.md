@@ -1,12 +1,5 @@
 ## Deefy
 
-### Adding Login with Unstoppable domain
-
-Video link: [https://youtu.be/0DzkPw7P_0k](https://youtu.be/0DzkPw7P_0k)<br />
-Discord Handle: RahulBan#4539<br />
-Email: rbbansal558@gmail.com<br />
-Unstoppable Domain: uns-devtest-rahul.crypto
-
 ### Description
 
 Deefy is a one stop multi-chain DeFi dashboard that allows anyone to visualise, track and analyse data.
