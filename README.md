@@ -18,7 +18,7 @@ Deefy is a one stop multi-chain DeFi dashboard that allows anyone to visualise, 
 - Get current crypto related news
 - Login with Unstoppable domain
 
-#### Website: [Deefy](https://deefy-rahulbansal123.vercel.app/)
+#### Website: [Deefy](https://deefy.vercel.app/)
 
 #### Running the app
 

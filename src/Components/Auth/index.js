@@ -13,7 +13,7 @@ const uauth = new UAuth({
   clientID: '5707e27e-11dc-4981-9782-fefc554cbc06',
   redirectUri:
     process.env.NODE_ENV === 'production'
-      ? 'https://deefy-rahulbansal123.vercel.app/'
+      ? 'https://deefy.vercel.app/'
       : 'http://localhost:3000',
 });
 
